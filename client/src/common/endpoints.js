@@ -1,4 +1,4 @@
-const serverDomain = "http://localhost:8000";
+const serverDomain = "https://future-fs-02-z9zr.onrender.com";
 export const summaryApi = {
   // Auth
   signup: { url: `${serverDomain}/api/auth/signup`, method: "POST" },

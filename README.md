@@ -104,13 +104,7 @@ In `/server/.env`:
 ```
 MONGODB_URI=your_mongodb_connection_string
 SECRET=your_secret_key
-FRONTEND_URL=http://localhost:5173
-```
-
-In `/client/.env`:
-
-```
-VITE_API_URL=http://localhost:5000
+CLIENT_URL=http://localhost:5173
 ```
 
 ### 4️⃣ Run the App

@@ -1,4 +1,3 @@
-import React from "react";
 import heroImg from "/img/hero_bg.jpg";
 
 const Hero = () => {
@@ -28,6 +27,7 @@ const Hero = () => {
             src={heroImg}
             alt="Minimalist Living Room"
             className="max-h-[500px] rounded-2xl shadow-lg"
+            loading="lazy"
           />
         </div>
       </div>

@@ -44,6 +44,7 @@ const Cart = () => {
                   <img
                     src={item.productId.image}
                     alt={item.productId.name}
+                    loading="lazy"
                     className="h-20 w-20 rounded-lg object-cover"
                   />
                   <div>

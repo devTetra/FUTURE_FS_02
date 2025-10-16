@@ -35,6 +35,7 @@ const ProductDetails = () => {
             <img
               src={product.image}
               alt={product.name}
+              loading="lazy"
               className="h-full w-full cursor-pointer object-cover transition duration-500 hover:scale-105"
             />
           </div>

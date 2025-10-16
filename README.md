@@ -128,7 +128,7 @@ Then visit **[http://localhost:5173](http://localhost:5173)** 🎉
 ## 🌍 Deployment
 
 - **Frontend:** Deployed on **Vercel**
-- **Backend:** Deployed on **Render** or **Railway**
+- **Backend:** Deployed on **Render**
   Connect your GitHub repo to Vercel for automatic React build detection and continuous deployment. ⚡
 
 ---

@@ -32,7 +32,7 @@ const Header = () => {
           <Link to="/cart" className="hover:text-primary relative transition">
             <FaShoppingBag className="text-lg sm:text-xl" />
             <div className="bg-accent text-background absolute -top-2 -right-3 flex h-5 w-5 items-center justify-center rounded-full p-1 text-xs font-medium">
-              {quantity}
+              {quantity || 0}
             </div>
           </Link>
           <Link to="/user-details" className="hover:text-primary transition">

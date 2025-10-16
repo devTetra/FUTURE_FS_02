@@ -1,6 +1,6 @@
 # ✨ Aureo
 
-A modern minimalist **e-commerce brand** built with React, Tailwind CSS, and Node.js. Inspired by refined typography, soft neutrals, and warm gold accents — **Aureo** delivers a luxurious yet approachable shopping experience where elegance meets functionality.
+Aureo is a mini **e-commerce project** demonstrating a clean, modern, and responsive design. It features a product grid, product details page, cart functionality, and user authentication. Built with React and Tailwind CSS, **Aureo** emphasizes usability, modular design, and an intuitive shopping experience.
 
 ---
 

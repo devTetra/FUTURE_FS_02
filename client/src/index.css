@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-heading: "Lora", "serif";
+  --font-body: "Geist", "sans-serif";
+  --color-background: #f9f9f7;
+  --color-primary: #c6a86d;
+  --color-secondary: #eae6dc;
+  --color-accent: #8b7f67;
+  --color-text: #1b1b1b;
+}
+
+button {
+  @apply cursor-pointer
+}
+
+.login-bg {
+  background-image: url("/img/login_bg.jpg");
+}
+
+.signup-bg {
+  background-image: url("/img/signup_bg.jpg");
+}
+
+html,
+body {
+  overflow-x: hidden;
+}

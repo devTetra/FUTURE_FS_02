@@ -1,10 +1,14 @@
 import { FaSearch, FaShoppingBag, FaUser } from "react-icons/fa";
 import { Link } from "react-router";
 import { useCart } from "../context/CartContext";
+import { useEffect } from "react";
 
 const Header = () => {
   const { cart } = useCart();
-  const quantity = cart?.items?.reduce((acc, item) => acc + item.quantity, 0);
+  let quantity = 0;
+
+  if (cart?.items)
+    quantity = cart?.items?.reduce((acc, item) => acc + item.quantity, 0);
 
   return (
     <header className="bg-background/80 font-body fixed z-50 w-full shadow-sm backdrop-blur-md">
@@ -27,12 +31,11 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Navigation Icons */}
         <nav className="flex items-center gap-5 sm:gap-6">
           <Link to="/cart" className="hover:text-primary relative transition">
             <FaShoppingBag className="text-lg sm:text-xl" />
             <div className="bg-accent text-background absolute -top-2 -right-3 flex h-5 w-5 items-center justify-center rounded-full p-1 text-xs font-medium">
-              {quantity || 0}
+              {quantity}
             </div>
           </Link>
           <Link to="/user-details" className="hover:text-primary transition">

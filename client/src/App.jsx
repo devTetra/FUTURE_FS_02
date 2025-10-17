@@ -36,7 +36,6 @@ function App() {
   return (
     <>
       <ToastContainer />
-
       {!hideLayouts && <Header />}
       <main className="font-body min-h-[100vh]">
         <Outlet />

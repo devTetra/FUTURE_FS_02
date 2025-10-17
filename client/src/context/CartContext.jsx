@@ -1,9 +1,11 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { summaryApi } from "../common/endpoints";
 import { toast } from "react-toastify";
+import { useAuth } from "./AuthContext";
 
 const CartContext = createContext();
 export const CartProvider = ({ children }) => {
+  const { user } = useAuth();
   const [cart, setCart] = useState();
   const [loading, setLoading] = useState(true);
 
@@ -22,8 +24,9 @@ export const CartProvider = ({ children }) => {
     }
   };
   useEffect(() => {
-    fetchCart();
-  }, []);
+    if (user) fetchCart();
+    else setCart([]);
+  }, [user]);
 
   const addToCart = async (productId, quantity = 1) => {
     try {

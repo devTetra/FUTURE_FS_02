@@ -6,7 +6,7 @@ import { useCart } from "../context/CartContext";
 const Cart = () => {
   const { fetchCart, cart, removeFromCart } = useCart();
   const navigate = useNavigate();
-  const total = cart?.items.reduce(
+  const total = cart?.items?.reduce(
     (acc, item) => acc + item.productId.price * item.quantity,
     0,
   );

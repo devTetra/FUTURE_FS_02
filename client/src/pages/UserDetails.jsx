@@ -25,7 +25,6 @@ export const UserDetails = () => {
     //   credentials: "include",
     // });
     logout();
-    navigate("/login");
   };
 
   useEffect(() => {

@@ -1,12 +1,9 @@
 import { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa6";
-import { summaryApi } from "../common/endpoints";
-import { Link, useNavigate } from "react-router";
-import { toast } from "react-toastify";
+import { Link } from "react-router";
 import { useAuth } from "../context/AuthContext";
 
 const LoginForm = () => {
-  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -22,7 +19,6 @@ const LoginForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     login(formData);
-    navigate("/");
   };
 
   return (

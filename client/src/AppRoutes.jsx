@@ -11,7 +11,12 @@ import { useAuth } from "./context/AuthContext";
 
 export const AppRoutes = () => {
   const { user, loading } = useAuth();
-  if (loading) return <p>Loading..</p>;
+  if (loading)
+    return (
+      <p className="text-text font-body flex h-screen items-center justify-center">
+        Loading..
+      </p>
+    );
 
   return (
     <Routes>

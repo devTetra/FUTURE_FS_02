@@ -48,6 +48,7 @@ export const logIn = async (req, res) => {
 			const tokenOption = {
 				httpOnly: true,
 				secure: true,
+				sameSite: 'none',
 			};
 
 			res
